@@ -158,12 +158,15 @@ resource "aws_instance" "app_server" {
               sudo bash -c 'echo awe yeah > /var/www/html/index.html'
               EOF
 
-              # Typically I was able to install the requirements for relay by:
+              # Try the requirements for relay
+  
               # sudo apt install python3-pip
               # sudo apt install flask
               # sudo apt install json
               # sudo apt install requests
               # sudo apt install gunicorn
+  
+              # Need to create/start service
 
   # tags = {
   #   Name = "ExampleAppServerInstance"
